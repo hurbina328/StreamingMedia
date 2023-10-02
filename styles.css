@@ -1,0 +1,27 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+
+}
+nav {
+    grid-area:nav;
+    float: right;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
