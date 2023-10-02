@@ -1,10 +1,18 @@
+html {
+    background-color : #020659; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
 body{
     display: grid;
     grid-template-areas:
     "header nav"
     "main main"
     "footer footer";
-
+    margin:0 auto;
+    width: 834px;
+    left:50%;
+    top:50%;
 }
 nav {
     grid-area:nav;
@@ -15,6 +23,31 @@ main {
 }
 footer {
     grid-area: footer;
+    background-color: white;
+    color: #590242
+}
+table
+{
+    color: white;
+}
+.jazz {
+    background-color: #020873;
+}
+.middle {
+    background-color: white;
+    color: #590242
+}
+.yourPlaylist{
+    background-color: #2699FB;
+}
+.yourPlaylist td {
+    background-color: #0D8DFB;
+}
+.curatedPlaylist{
+    background-color: #030A8C;
+}
+.curatedPlaylist td{
+    background-color: #2104d9;
 }
 @media screen and (min-width:834px) {
     ul {
