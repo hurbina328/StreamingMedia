@@ -1,0 +1,73 @@
+html{
+    background-color: #020659;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    margin: 0 auto;
+}
+.yourPlaylists {
+    display:float;
+    float: left;
+}
+.yourPlaylists th {
+    background-color: white;
+}
+.yourPlaylists tr{
+ background-color: #0D8dfb;   
+}
+.yourPlaylists td {
+    background-color: #2104d9;
+}
+.curatedPlaylists{
+    display: float;
+    float: right;
+}
+.curatedPlaylists tr {
+    background-color: #030A8C; 
+}
+.curatedPlaylists td {
+    background-color:  #020873 ;
+}
+.trendingSongs {
+    color:#590242;
+    background-color: white;
+}
+footer {
+  display: block;
+}
+
+#trending ::-webkit-scrollbar {
+
+}
+#trending ::-webkit-scrollbar-track {
+
+}
+#trending ::-webkit-scrollbar-thumb {
+
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
+
+audio::-webkit-media-controls-mute-button {
+
+}
+audio::-webkit-media-controls-play-button {
+
+}
+audio::-webkit-media-controls-enclosure {
+
+}
