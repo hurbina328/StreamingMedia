@@ -1,73 +1,75 @@
-html{
-    background-color: #020659;
+html {
+    background-color : #020659; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+    margin:0 auto;
+    width: 834px;
+    left:50%;
+    top:50%;
 }
-.yourPlaylists {
-    display:float;
-    float: left;
-}
-.yourPlaylists th {
-    background-color: white;
-}
-.yourPlaylists tr{
- background-color: #0D8dfb;   
-}
-.yourPlaylists td {
-    background-color: #2104d9;
-}
-.curatedPlaylists{
-    display: float;
+nav {
+    grid-area:nav;
     float: right;
+    text-decoration: none;
+   
 }
-.curatedPlaylists tr {
-    background-color: #030A8C; 
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+li {
+    list-style-type: none;
 }
-.curatedPlaylists td {
-    background-color:  #020873 ;
+a {
+    text-decoration: none;
+    color: white;
 }
-.trendingSongs {
-    color:#590242;
-    background-color: white;
+main {
+    grid-area: main;
 }
 footer {
-  display: block;
+    grid-area: footer;
+    background-color: white;
+    color: #590242
 }
-
-#trending ::-webkit-scrollbar {
-
+table
+{
+    color: white;
 }
-#trending ::-webkit-scrollbar-track {
-
+.jazz {
+    background-color: #020873;
 }
-#trending ::-webkit-scrollbar-thumb {
-
+.middle {
+    background-color: white;
+    color: #590242
 }
-#trending ::-webkit-scrollbar-thumb:hover {
-
+.yourPlaylist{
+    background-color: #2699FB;
 }
-#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-
+.yourPlaylist td {
+    background-color: #0D8DFB;
 }
-#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-
+.curatedPlaylist{
+    background-color: #030A8C;
 }
-#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-
+.curatedPlaylist td{
+    background-color: #2104d9;
 }
-#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-
-}
-
-audio::-webkit-media-controls-mute-button {
-
-}
-audio::-webkit-media-controls-play-button {
-
-}
-audio::-webkit-media-controls-enclosure {
-
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
