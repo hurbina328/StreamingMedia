@@ -1,9 +1,10 @@
 html {
     background-color : #020659; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: black;
 }
 body{
+    background-color: #ffffff;
     margin:0 auto;
     width: 834px;
     left:50%;
@@ -25,16 +26,17 @@ nav{
     display: flex;
     padding-bottom: 100px;
     justify-content: space-between;
+    background-color: #020873;
 }
 ul {
     display: flex;  
     align-items: center;
-    width: 50%;
+    width: 834px;
   }
 li {
     list-style-type: none;
-    justify-content: space-evenly;
-    display: inline-block;
+    color: white;
+    width: 25%;
 }
 a {
     text-decoration: none;
@@ -44,10 +46,12 @@ main {
     width: 834px;
 }
 footer {
-    background-color: white;
     color: #590242
 }
-.scroll, .scrollH{
+.playlists{
+    width:100%;
+}
+.scroll{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
@@ -59,11 +63,54 @@ footer {
 }
 .scroll div {
     position: absolute;
-    top: 251px;
+    top: 231px;
     background-color: rgb(255,255,255,.75);
     padding: 5px;
-    height: 50px;
+    height: 80px;
     width: 350px;
+}
+.scrollH .yourPlaylist{
+    float: left;
+    width: 50%;
+}
+.scrollH .curatedPlaylists{
+    float: right;
+    width: 50%;
+}
+.yourPlaylist table {
+    background-color: #2699fb;
+    table-layout: fixed;
+    color:white;
+}
+.yourPlaylist td {
+    background-color: #0D8AFb;
+    text-align: center; 
+}
+.yourPlaylist tr {
+    width: 50%;
+    height: 50%;
+}
+.yourPlaylist img {
+    height: 100%;
+    width: 100%;
+}
+.curatedPlaylists table {
+    background-color: #030A8C;
+    table-layout: fixed;
+    color: white;
+    
+}
+.curatedPlaylists td {
+    background-color: #020873;
+    text-align: center;
+}
+.curatedPlaylists tr {
+    width: 50%;
+    height: 50%;
+}
+.curatedPlaylists img {
+    height: 100%;
+    width: 100%;
 }
 dl
 {
@@ -87,6 +134,9 @@ audio {
     display: block;
     text-align: center;
     margin: 10px 0 30px 32px;
+}
+.yourPlaylists{
+    color:#590242;
 }
 .more:hover{
 
