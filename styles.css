@@ -26,7 +26,7 @@ nav{
     display: flex;
     padding-bottom: 100px;
     justify-content: space-between;
-    background-color: #020873;
+    background-color: #030A8C;
 }
 ul {
     display: flex;  
@@ -46,7 +46,41 @@ main {
     width: 834px;
 }
 footer {
-    color: #590242
+    text-align: center;
+    color: #590242;
+    padding-top: 20px;
+}
+div h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+table {
+    color:#590242;
+}
+button{
+    background-color: #590242;
+    color: #ffffff;
+}
+tr{
+    height: 25%;
+}
+.labels {
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#590242;
+    background-color: white;
+    width: 820px;
+    text-align: center;
+}
+.buttons td{
+    padding-right: 300px;
+}
+.trending{
+    color:#590242;
+}
+.jazz {
+    background-color: #020873;
+    color: white;
 }
 .playlists{
     width:100%;
@@ -56,6 +90,11 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
+}
+.yourPlaylist , .curatedPlaylists {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
 }
 .scroll section, .scrollH section{
     margin:10px;
@@ -81,6 +120,8 @@ footer {
     background-color: #2699fb;
     table-layout: fixed;
     color:white;
+    height: 50%;
+    width: 100%;
 }
 .yourPlaylist td {
     background-color: #0D8AFb;
@@ -98,7 +139,8 @@ footer {
     background-color: #030A8C;
     table-layout: fixed;
     color: white;
-    
+    height: 50%;
+    width: 100%;
 }
 .curatedPlaylists td {
     background-color: #020873;
@@ -119,10 +161,18 @@ dl
 dt {
     padding-right: 5px;
 }
+
 audio {
     position: absolute;
     bottom: 150px;
     left: 5px;
+}
+.trending{
+    padding-bottom: 50px;
+}
+.trending button{
+    margin-top: 10px;
+    float: right;
 }
 .more{
     text-decoration: none;
@@ -135,11 +185,9 @@ audio {
     text-align: center;
     margin: 10px 0 30px 32px;
 }
-.yourPlaylists{
+.yourPlaylist, .curatedPlaylists{
     color:#590242;
-}
-.more:hover{
-
+    font-weight: bold;
 }
 #trending ::-webkit-scrollbar {
     background: #590242;
